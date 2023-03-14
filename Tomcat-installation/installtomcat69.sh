@@ -28,8 +28,9 @@ If you wish to modify this restriction, you'll need to edit the Manager's contex
 vi /opt/tomcat9/webapps/manager/META-INF/context.xml
 
 
+If you have not changed any configuration files, please examine the file conf/tomcat-users.xml in your installation. That file must contain the credentials to let you use this webapp.
 
-vi /opt/tomcat9/conf/tomcat-user.xml  # to add user
+vi /opt/tomcat9/conf/tomcat-users.xml
 	
 
   
