@@ -21,3 +21,19 @@ sudo ln -s /opt/tomcat9/bin/shutdown.sh /usr/bin/stoptomcat
 sudo starttomcat
 echo "end on tomcat installation"
 sudo su - ec2-user
+
+#2. Start of tomcat configuration 
+If you wish to modify this restriction, you'll need to edit the Manager's context.xml file.
+
+vi /opt/tomcat9/webapps/manager/META-INF/context.xml
+
+
+
+vi /opt/tomcat9/conf/tomcat-user.xml  # to add user
+	
+
+  
+	
+  #Tomcat server configuration:
+find / -name server.xml context.xml
+vim /opt/tomcat9/conf/server.xml
